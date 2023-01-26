@@ -1,0 +1,24 @@
+package com.example.demo;
+
+import java.util.Hashtable;
+import java.util.Map;
+
+public class Repository {
+
+	static Map<String, City> city = new Hashtable<>();
+	
+	static {
+		city.put("USA", new City( "Vashington", 40000, 03));
+		city.put("Russia", new City( "Moscow", 361568, 02));
+		city.put("Germany", new City( "Berlin", 723000, 01));
+	}
+	
+	public City cityByName(String name) {
+		return city.get(name);
+	}
+	
+	public City addCity(City p) {
+		city.put(p.getName(), p);
+		return p;
+	}
+}

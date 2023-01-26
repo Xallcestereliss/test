@@ -1,0 +1,63 @@
+package com.example.demo;
+
+public class City {
+
+	private String name;
+	private int population;
+	private final long id;
+	public City(String name, int population,long id) {
+		super();
+		this.name = name;
+		this.population = population;
+		this.id = id;
+	}
+	
+		// TODO Auto-generated constructor stub
+
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getPopulation() {
+		return population;
+	}
+	public void setPopulation(int population) {
+		this.population = population;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public class landmark{
+		private String landmarkName;
+		private int date;
+		private String tipe;
+		
+		public landmark (String landmarkName, int date) {
+			super();
+		}
+		
+		public String getLandmarkName() {
+			return landmarkName;
+		}
+		public void setLandmarkName(String landmarkName) {
+			this.landmarkName = landmarkName;
+		}
+		public int getDate() {
+			return date;
+		}
+		public void setDate(int date) {
+			this.date = date;
+		}
+		public String getTipe() {
+			return tipe;
+		}
+		public void setTipe(String tipe) {
+			this.tipe = tipe;
+		}
+		 
+	}
+}
